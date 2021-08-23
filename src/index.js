@@ -10,11 +10,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 const element = <h1>Hello from Create React App</h1>
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
       <TodoContainer />
     </Router>  
-   </React.StrictMode>
+  //  </React.StrictMode>
   ,
   document.getElementById('root')
 );
