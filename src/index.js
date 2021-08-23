@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import TodoContainer from './functionBased/components/TodoContainer';
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+
+const element = <h1>Hello from Create React App</h1>
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router>
+      <TodoContainer />
+    </Router>  
+   </React.StrictMode>
+  ,
   document.getElementById('root')
 );
 
