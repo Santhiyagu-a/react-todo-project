@@ -9,6 +9,7 @@ const TodosList = props => {
         <TodoItem
         key={todo.id}
         todo={todo}
+        todos = {props.todos}
         handleChangeProps={props.handleChangeProps}
         deleteTodoProps={props.deleteTodoProps}
         setUpdate={props.setUpdate}

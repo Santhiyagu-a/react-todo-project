@@ -6,8 +6,27 @@ const TodoItem = props => {
     const [editing, setEditing] = useState(false)
 
    const handleEditing = () => {
-        setEditing(true)
-    }
+    props.todos.map(item=> {
+        //setEditing(false);
+    if(props.todo.id!== item.id)
+        {
+            setEditing(false);
+
+        }
+    })
+     props.todos.map(item=> {
+        //setEditing(false);
+        if(props.todo.id=== item.id)
+        {
+            setEditing(true);
+
+        }
+        else{
+            setEditing(false);
+        }
+    })
+    
+};
     
     const handleUpdatedDone = event => {
         if (event.key === "Enter") {
